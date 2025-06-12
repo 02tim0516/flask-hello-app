@@ -2,7 +2,7 @@ from flask import Flask, Response, render_template_string
 import cv2
 
 app = Flask(__name__)
-camera_url = "https://trafficvideo2.tainan.gov.tw/54b2e135"
+camera_url = "https://trafficvideo.tainan.gov.tw/172022003100"
 
 # 網頁模板：左側為影像，右側為學號/姓名/路口名稱
 HTML_TEMPLATE = '''
@@ -29,9 +29,9 @@ HTML_TEMPLATE = '''
         <img src="{{ url_for('video_feed') }}" width="100%">
     </div>
     <div class="info-panel">
-        <div class="info-item"><strong>學號：</strong> M113</div>
-        <div class="info-item"><strong>姓名：</strong> 我大爺</div>
-        <div class="info-item"><strong>路口名稱：</strong> 台南市 中華西路與健康路</div>
+        <div class="info-item"><strong>學號：</strong> M11382033</div>
+        <div class="info-item"><strong>姓名：</strong> 宋定睿</div>
+        <div class="info-item"><strong>路口名稱：</strong> 台南市 大同路二段與健康路一段口(西 </div>
     </div>
 </body>
 </html>
